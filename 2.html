@@ -1,0 +1,17 @@
+<SCRIPT>
+
+var repeat = "true" ;
+while ( repeat == "true" || repeat == "yes" ) {
+    var number = Math.round(Math.random() * 100 + 1);
+    var guess = prompt("Guess a number between 1 and 100: ");
+    if ( guess < number )
+        alert (guess + " is too low. The random number is " + number);
+    else if ( guess > number )
+        alert (guess + " is too high. The random number is " + number);
+    else {
+        alert ("correct ! 100% winner ");
+        }
+
+     repeat = prompt("do you want to continue ?");
+}
+</SCRIPT>
